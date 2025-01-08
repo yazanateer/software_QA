@@ -1,0 +1,17 @@
+[
+    {
+        "username": "yazanateer@1",
+        "password": "123456789",
+        "expectedResult": "route=account/login"
+    },
+    {
+        "username": "adamm@123",
+        "password": "12345676458dasas9",
+        "expectedResult": "route=account/login"
+    },
+    {
+        "username": "userDone009",
+        "password": "Abcd56789",
+        "expectedResult": "route=account/account"
+    }
+]
