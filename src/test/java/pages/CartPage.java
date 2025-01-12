@@ -18,7 +18,6 @@ public class CartPage {
 	
 	
 	
-	
 	//methods to click on the buttons
 	public void clickPlaceOrder() {
 		driver.findElement(PlaceOrderButton).click();
