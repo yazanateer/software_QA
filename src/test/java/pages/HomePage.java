@@ -14,8 +14,9 @@ public class HomePage {
 	//locate the navigation buttons in the home page
 	By ContactBtn = By.xpath("//button[text()='Contact']");
 	By AboutUsBtn = By.xpath("//button[text()='About us']");
-	By CartBtn = By.xpath("//button[text()='Cart']");
-	By LoginBtn = By.xpath("//button[text()='Log in']");
+	By CartBtn = By.xpath("//a[text()='Cart']");
+	By LoginBtn = By.id("login2");
+	By LogoutBtn = By.id("logout2");
 	By SignupBtn = By.xpath("//button[text()='Sign up']");
 	
 	//methods to click on each one 
@@ -30,6 +31,9 @@ public class HomePage {
 	}
 	public void clickLogin() {
 		driver.findElement(LoginBtn).click();
+	}
+	public void clickLogout() {
+		driver.findElement(LogoutBtn).click();
 	}
 	public void clickSignup() {
 		driver.findElement(SignupBtn).click();
