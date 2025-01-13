@@ -26,7 +26,9 @@ public class HomePage {
 	
     By PrevBtn = By.xpath("//button[text()='Previous']");
     By NextBtn = By.xpath("//button[text()='Next']");
-     
+    
+    By firstProduct = By.xpath("//div[@id='tbodyid']/div[1]//h4/a");
+    
 	//methods to click on each one 
 	public void clickContact() {
 		driver.findElement(ContactBtn).click();
@@ -76,6 +78,12 @@ public class HomePage {
             return false; 
         }
     }
+    
+    public void clickProduct() {
+        driver.findElement(firstProduct).click();
+    }
+    
+    
 	
 }
 

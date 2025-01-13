@@ -14,7 +14,7 @@ public class CartPage {
 	By PlaceOrderButton = By.xpath("//button[text()='Place Order']");
 	
 	//to locate the option for delete items from the cart page 
-	By DeleteButton = By.xpath("//button[text()='Delete']");
+	By DeleteButton = By.xpath("//a[text()='Delete']");
 	
 	
 	
@@ -25,6 +25,11 @@ public class CartPage {
 	
 	public void clickDelete() {
 		driver.findElement(DeleteButton).click();
+	}
+	
+	public boolean isEmpty() {
+            return driver.findElements(DeleteButton).isEmpty();
+      
 	}
 	
 }
