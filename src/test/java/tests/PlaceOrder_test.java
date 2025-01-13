@@ -49,7 +49,7 @@ public class PlaceOrder_test extends base_test {
         logger.info("Starting Place Order test...");
 
     	
-    	// Parse order data from JSON file
+        //define the JSON file that will read from it
         JSONParser parser = new JSONParser();
         FileReader reader = new FileReader("orders.json");
         JSONObject orderData = (JSONObject) parser.parse(reader);
@@ -63,24 +63,24 @@ public class PlaceOrder_test extends base_test {
         logger.debug("Order data loaded from JSON file: " + orderData);
 
         
-        // Initialize Page Objects
+        // initialize Page Objects
         HomePage homePage = new HomePage(driver);
         CartPage cartPage = new CartPage(driver);
         PlaceOrderPage placeOrderPage = new PlaceOrderPage(driver);
 
-        // Navigate to the Cart
+        // navigate to the Cart page
         homePage.clickCart();
         Thread.sleep(3000);
         logger.info("Navigated to Cart.");
 
 
-        // Click "Place Order"
+        // click "Place Order"
         cartPage.clickPlaceOrder();
         Thread.sleep(3000);
         logger.info("Clicked 'Place Order'.");
 
 
-        // Fill out the order form
+        // fill out the order form
         placeOrderPage.fillName(name);
         placeOrderPage.fillCountry(country);
         placeOrderPage.fillCity(city);
@@ -91,14 +91,14 @@ public class PlaceOrder_test extends base_test {
         logger.debug("Filled the order data...");
 
 
-        // Click "Purchase"
+        // click "Purchase"
         placeOrderPage.clickPurchase();
         Thread.sleep(3000);
         logger.info("Clicked 'Purchase'.");
 
 
         
-        // Handle Alert or Confirmation Message
+        //handle the alert message if displayed
         try {
             Alert alert = driver.switchTo().alert();
             String alertText = alert.getText();
@@ -110,11 +110,10 @@ public class PlaceOrder_test extends base_test {
                 logger.error("Test Failed: Unexpected alert message.");
             }
 
-            // Close the alert
             alert.accept();
 
         } catch (org.openqa.selenium.NoAlertPresentException e) {
-            // No alert indicates the purchase was successful
+            // no alert indicates the purchase was successful
             logger.info("Test Passed: Purchase completed successfully.");
 
             String confirmationMessage = driver.findElement(By.xpath("//h2[text()='Thank you for your purchase!']")).getText();

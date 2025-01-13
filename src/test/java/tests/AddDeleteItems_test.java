@@ -45,25 +45,27 @@ public class AddDeleteItems_test extends base_test {
     public void simple() throws InterruptedException {
     	logger.info("Starting Add and Delete Items test...");
     	Thread.sleep(3000);
-        // Add an item to the cart
+    	
+        // navigate to the product page 
         homePage.clickProduct();
         Thread.sleep(3000);
         logger.debug("Clicked on the product.");
 
 
+        //click on the 'add to cart' button
         productPage.clickAddToCart();
-        Thread.sleep(3000); // Wait for the "Added to cart" alert
+        Thread.sleep(3000); 
         logger.debug("Clicked 'Add to Cart' button.");
         
-        // Handle alert
+        // handle alert
         driver.switchTo().alert().accept();
         logger.info("Item added to the cart.");
 
-        // Navigate to the cart page
+        // navigate to the cart page
         homePage.clickCart();
         Thread.sleep(2000);
 
-        // Delete items from the cart
+        // delete items from the cart
         if (!cartPage.isEmpty()) {
             cartPage.clickDelete();
             Thread.sleep(2000);

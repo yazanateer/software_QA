@@ -11,7 +11,7 @@ public class ProductPage {
         this.driver = driver;
     }
 
-    // Locate the "Add to cart" button
+    // locate the "Add to cart" button
     By addToCartButton = By.xpath("//a[text()='Add to cart']");
 
     public void clickAddToCart() {

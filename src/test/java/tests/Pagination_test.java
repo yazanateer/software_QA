@@ -30,8 +30,6 @@ public class Pagination_test extends base_test {
         driver.get("https://demoblaze.com");
         homePage = new HomePage(driver);
         logger.info("Navigated to demoblaze.com");
-        
-        
 
     }
 
@@ -39,8 +37,9 @@ public class Pagination_test extends base_test {
     public void simple() throws InterruptedException {
         logger.info("Starting pagination test...");
 
+        //check if there are "next" button in the page 
         while (homePage.isNextButtonEnabled()) {
-            homePage.scrollToBottom(); 
+            homePage.scrollToBottom();  //scroll down in the page
             Thread.sleep(2000); 
             logger.debug("Clicking on 'Next' button.");
             homePage.clickNext(); 
@@ -48,7 +47,7 @@ public class Pagination_test extends base_test {
         }
         logger.info("Reached the last page.");
 
-    
+        
             homePage.scrollToBottom(); 
             Thread.sleep(2000); 
             logger.debug("Clicking on 'Previous' button.");

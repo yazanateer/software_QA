@@ -45,16 +45,18 @@ public class Login_test extends base_test {
     	
     	logger.info("Starting Login Test...");
     	
-    	
+    	//define the JSON file that will read from it 
         JSONParser parser = new JSONParser();
         FileReader reader = new FileReader("login.json");
         JSONArray users = (JSONArray) parser.parse(reader);
 
         logger.debug("fetching users data from JSON file.");
         
+        //define the object pages
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
 
+        //iterate over the users data that fetched from the JSON file 
         for (Object userObject : users) {
             JSONObject user = (JSONObject) userObject;
             String username = (String) user.get("username");
@@ -76,6 +78,7 @@ public class Login_test extends base_test {
             
             Thread.sleep(2000);
 
+            //handle the alert message if displayed
             try {
                 Alert alert = driver.switchTo().alert();
                 logger.warn("Alert present for user: " + username + ". Text: " + alert.getText());
