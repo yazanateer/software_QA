@@ -1,0 +1,84 @@
+[INFO ] 2025-01-13 20:32:28.035 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 20:32:33.470 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 20:32:37.033 [main] Login_test - Navigated to demoblaze.com
+[INFO ] 2025-01-13 20:33:08.443 [main] base_test - Driver close .
+[INFO ] 2025-01-13 20:40:30.441 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 20:40:36.417 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 20:40:38.711 [main] Login_test - Navigated to demoblaze.com
+[INFO ] 2025-01-13 20:40:38.712 [main] Login_test - Starting Login Test...
+[DEBUG] 2025-01-13 20:40:38.728 [main] Login_test - fetching users data from JSON file.
+[INFO ] 2025-01-13 20:40:38.733 [main] Login_test - Testing login for user: yazanateer@1
+[DEBUG] 2025-01-13 20:40:41.113 [main] Login_test - Navigate to the Login page .
+[DEBUG] 2025-01-13 20:40:41.990 [main] Login_test - Clicked Login button.
+[INFO ] 2025-01-13 20:40:46.121 [main] Login_test - Login successful for user: yazanateer@1
+[DEBUG] 2025-01-13 20:40:46.731 [main] Login_test - yazanateer@1 logged out successfully.
+[INFO ] 2025-01-13 20:40:49.450 [main] Login_test - Testing login for user: adamm@123
+[DEBUG] 2025-01-13 20:40:51.652 [main] Login_test - Navigate to the Login page .
+[DEBUG] 2025-01-13 20:40:52.231 [main] Login_test - Clicked Login button.
+[WARN ] 2025-01-13 20:40:54.249 [main] Login_test - Alert present for user: adamm@123. Text: User does not exist.
+[INFO ] 2025-01-13 20:40:56.278 [main] Login_test - Login failed as expected for user: adamm@123
+[INFO ] 2025-01-13 20:40:58.896 [main] Login_test - Testing login for user: userDone009
+[DEBUG] 2025-01-13 20:41:01.066 [main] Login_test - Navigate to the Login page .
+[DEBUG] 2025-01-13 20:41:01.671 [main] Login_test - Clicked Login button.
+[INFO ] 2025-01-13 20:41:05.697 [main] Login_test - Login failed as expected for user: userDone009
+[INFO ] 2025-01-13 20:41:08.263 [main] Login_test - Login Test completed.
+[INFO ] 2025-01-13 20:41:08.927 [main] base_test - Driver close .
+[INFO ] 2025-01-13 20:41:08.943 [main] Login_test - Test finished successfully.
+[INFO ] 2025-01-13 20:50:36.854 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 20:50:45.622 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 20:50:48.398 [main] AddDeleteItems_test - Navigated to demoblaze.com
+[INFO ] 2025-01-13 20:50:48.404 [main] AddDeleteItems_test - Starting Add and Delete Items test...
+[INFO ] 2025-01-13 20:50:57.411 [main] base_test - Driver close .
+[ERROR] 2025-01-13 20:50:57.464 [main] AddDeleteItems_test - Test failed.
+[INFO ] 2025-01-13 20:51:37.494 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 20:51:42.333 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 20:51:43.690 [main] AddDeleteItems_test - Navigated to demoblaze.com
+[INFO ] 2025-01-13 20:51:43.693 [main] AddDeleteItems_test - Starting Add and Delete Items test...
+[DEBUG] 2025-01-13 20:51:50.661 [main] AddDeleteItems_test - Clicked on the product.
+[DEBUG] 2025-01-13 20:51:53.962 [main] AddDeleteItems_test - Clicked 'Add to Cart' button.
+[INFO ] 2025-01-13 20:51:53.986 [main] AddDeleteItems_test - Item added to the cart.
+[WARN ] 2025-01-13 20:51:56.951 [main] AddDeleteItems_test - Cart is already empty.
+[INFO ] 2025-01-13 20:51:57.583 [main] base_test - Driver close .
+[INFO ] 2025-01-13 20:51:57.602 [main] AddDeleteItems_test - Test finished successfully.
+[INFO ] 2025-01-13 20:57:44.345 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 20:57:49.055 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 20:57:54.372 [main] Pagination_test - Navigated to demoblaze.com
+[INFO ] 2025-01-13 20:57:54.373 [main] Pagination_test - Starting pagination test...
+[DEBUG] 2025-01-13 20:57:56.659 [main] Pagination_test - Clicking on 'Next' button.
+[DEBUG] 2025-01-13 20:58:01.196 [main] Pagination_test - Clicking on 'Next' button.
+[INFO ] 2025-01-13 20:58:03.206 [main] base_test - Driver close .
+[ERROR] 2025-01-13 20:58:03.248 [main] Pagination_test - Test failed.
+[INFO ] 2025-01-13 20:58:11.209 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 20:58:15.914 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 20:58:17.642 [main] Pagination_test - Navigated to demoblaze.com
+[INFO ] 2025-01-13 20:58:17.643 [main] Pagination_test - Starting pagination test...
+[DEBUG] 2025-01-13 20:58:19.839 [main] Pagination_test - Clicking on 'Next' button.
+[INFO ] 2025-01-13 20:58:22.167 [main] Pagination_test - Reached the last page.
+[DEBUG] 2025-01-13 20:58:24.210 [main] Pagination_test - Clicking on 'Previous' button.
+[INFO ] 2025-01-13 20:58:27.372 [main] base_test - Driver close .
+[INFO ] 2025-01-13 20:58:27.386 [main] Pagination_test - Test finished successfully.
+[INFO ] 2025-01-13 21:06:05.828 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 21:06:10.475 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 21:06:13.383 [main] PlaceOrder_test - Navigated to https://demoblaze.com.
+[INFO ] 2025-01-13 21:06:13.383 [main] PlaceOrder_test - Starting Place Order test...
+[DEBUG] 2025-01-13 21:06:13.399 [main] PlaceOrder_test - Order data loaded from JSON file: {"country":"israel","month":"12","city":"tlv","year":"2027","name":"yazan","creditCard":"1234123412341234"}
+[INFO ] 2025-01-13 21:06:17.333 [main] PlaceOrder_test - Navigated to Cart.
+[INFO ] 2025-01-13 21:06:20.538 [main] PlaceOrder_test - Clicked 'Place Order'.
+[DEBUG] 2025-01-13 21:06:25.149 [main] PlaceOrder_test - Filled the order data...
+[INFO ] 2025-01-13 21:06:28.393 [main] PlaceOrder_test - Clicked 'Purchase'.
+[INFO ] 2025-01-13 21:06:28.424 [main] PlaceOrder_test - Test Passed: Purchase completed successfully.
+[INFO ] 2025-01-13 21:06:28.497 [main] PlaceOrder_test - Confirmation Message: Thank you for your purchase!
+[INFO ] 2025-01-13 21:06:29.347 [main] base_test - Driver close .
+[ERROR] 2025-01-13 21:06:29.366 [main] PlaceOrder_test - Test finished successfully.
+[INFO ] 2025-01-13 21:07:07.842 [main] base_test - Initializing the driver...
+[INFO ] 2025-01-13 21:07:12.335 [main] base_test - Driver initialized successfully.
+[INFO ] 2025-01-13 21:07:13.604 [main] PlaceOrder_test - Navigated to https://demoblaze.com.
+[INFO ] 2025-01-13 21:07:13.604 [main] PlaceOrder_test - Starting Place Order test...
+[DEBUG] 2025-01-13 21:07:13.624 [main] PlaceOrder_test - Order data loaded from JSON file: {"country":"israel","month":"12","city":"tlv","year":"2027","name":"yazan","creditCard":"1234123412341234"}
+[INFO ] 2025-01-13 21:07:17.748 [main] PlaceOrder_test - Navigated to Cart.
+[INFO ] 2025-01-13 21:07:20.946 [main] PlaceOrder_test - Clicked 'Place Order'.
+[DEBUG] 2025-01-13 21:07:25.208 [main] PlaceOrder_test - Filled the order data...
+[INFO ] 2025-01-13 21:07:28.490 [main] PlaceOrder_test - Clicked 'Purchase'.
+[INFO ] 2025-01-13 21:07:28.524 [main] PlaceOrder_test - Test Passed: Purchase completed successfully.
+[INFO ] 2025-01-13 21:07:28.610 [main] PlaceOrder_test - Confirmation Message: Thank you for your purchase!
+[INFO ] 2025-01-13 21:07:29.406 [main] base_test - Driver close .
